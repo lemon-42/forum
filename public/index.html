@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" type="text/css" href="/static/forum.css">
+</head>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="/forum">Forum</a>
+        </div>
+        <div id="user-links">
+            {{if not .User}}
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+            {{else}}
+            <p>Welcome, {{.User}}</p>
+            <a href="categories/new">Create new category</a>
+            <a href="/logout">Logout</a>
+            {{end}}
+        </div>
+    </header>
+    <main>
+        <div id="categories">
+            <div class="category">
+                <h2>Golang</h2>
+                <p>A programming language developed by Google.</p>
+            </div>
+            <div class="category">
+                <h2>Javascript</h2>
+                <p>A dynamic programming language for web development.</p>
+            </div>
+            <div class="category">
+                <h2>Rust</h2>
+                <p>A systems programming language focused on safety and performance.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

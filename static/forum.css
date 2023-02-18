@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+#logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#user-links a {
+    color: #fff;
+    margin-left: 1em;
+}
+
+#categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.category {
+    width: 25%;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.category:hover {
+    border-color: #333;
+}
